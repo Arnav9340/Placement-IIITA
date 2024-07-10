@@ -276,8 +276,8 @@ const verifyUserAll = asyncHandler(async(req, res) => {
         res.status(404) 
         throw new Error('User Not Found')
     }
-    if((!otpForEmail || (otpForEmail && otpForEmail === user.otpForEmail)) &&
-        (!otpForCollegeEmail || (otpForCollegeEmail && otpForCollegeEmail === user.otpForCollegeEmail))) {
+    if(((otpForEmail && otpForEmail === user.otpForEmail)) &&
+        ((otpForCollegeEmail && otpForCollegeEmail === user.otpForCollegeEmail))) {
             try {
                 user.verified = true
                 await user.save()

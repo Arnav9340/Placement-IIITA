@@ -14,7 +14,7 @@
     "render-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm install --prefix frontend && npm run build --prefix frontend"
   },
   
-  "author": "Ujjwal Narayan Pandram",
+  "author": "Arnav Agarwal",
   "license": "ISC",
   "dependencies": {
     "@emailjs/nodejs": "^2.1.1",
